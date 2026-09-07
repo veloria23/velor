@@ -1,0 +1,385 @@
+inventory-titles:
+  admin-confirm-gui: İşlemi Onayla
+  admin-menu: Yönetici Menüsü
+  auction-house: Açık Artırma Evi
+  cancel-auction: Açık Artırmayı İptal Et
+  collect-expired: Süresi Dolan Eşyayı Al
+  collect-sold: Satılan Eşyayı Al
+  my-auctions: Açık Artırmalarım
+  anvil-search: Eşya Ara
+  anvil-admin-search: Yönetici Eşya Arama
+  anvil-admin-expire-message: Süre Sonu Sebebi
+  anvil-admin-delete-message: Silme Sebebi
+  anvil-set-amount: Miktar Belirle
+  anvil-set-bid: Teklif Belirle
+  confirm-bid: Teklifi Onayla
+  my-bids: Tekliflerin
+  auction-view: Açık Artırma Görünümü
+world:
+  npc: §6Açık Artırma Ustası
+  displays:
+    line-0: '%price-trim%'
+    line-1: §e%time%
+    line-2: ''
+    line-3: §d[TIKLA]
+    by-player: 'Satan: %player%'
+    break-instruction: §cEkranı kaldırmak için yaratıcı moda geçin, eğilin ve taban
+      bloğunu kırın.
+commands:
+  ah: ah
+  aliases:
+  - acikartirma
+  sell: sat
+  bid: teklif
+  announce: duyur
+  admin: yonetici
+  ban: yasakla
+  pardon: affet
+  reload: yenile
+  summon: oluştur
+  blacklist: karaliste
+  add: ekle
+  undo: geri-al
+  npc: npc
+  display: ekran
+  highest_price: en-yuksek-fiyat
+  ending_soon: yakinda-bitecek
+  facing: yon
+  north: kuzey
+  east: dogu
+  south: guney
+  west: bati
+  exact: tam
+  material: materyal
+  name_contains: isim_icerir
+  contains_lore: lore_icerir
+  item_model: esya_modeli
+  custom_model_data: ozel_model_verisi
+  all: hepsi
+  test: deneme
+  save-item-to-layout-file: saveitemtolayout.yml
+  about: hakkinda
+  help: yardim
+  search: ara
+  search-cancel: iptal
+command-feedback:
+  usage: '§eKullanım: /ah sat <fiyat> <miktar>'
+  bid-usage: '§eBir eşya satmak için: /ah teklif <fiyat> <miktar>'
+  search-usage: '§eKullanım: /ah ara <eşya>&n§eKullanım: /ah ara iptal'
+  reached-max-auctions: §eAynı anda en fazla %limit% açık artırmanız olabilir
+  no-item-in-hand: §eSatmak için elinizde bir eşya tutmanız gerekir
+  invalid-number: Bu geçerli bir sayı değil
+  invalid-number2: Bu geçerli bir fiyat değil
+  invalid-number3: §eBu geçerli bir gün sayısı değil
+  invalid-number4: §eBu geçerli bir süre değil
+  invalid-number5: Eşya sıra numarası 0'dan büyük olmalıdır
+  invalid-number6: Geçersiz eşya sıra numarası. Lütfen geçerli bir numara girin
+  invalid-number7: Bu geçerli bir miktar değil
+  auction: §e%price% için bir açık artırma başlattınız
+  announcements-enabled: §aAçık artırma duyuruları etkinleştirildi! §7Artık oyuncular
+    eşya sattığında bunu göreceksiniz.
+  announcements-disabled: §cAçık artırma duyuruları devre dışı bırakıldı! §7Artık
+    oyuncular eşya sattığında bunu görmeyeceksiniz.
+  ban-usage: '§eKullanım: /ah yasakla <oyuncu> <gün cinsinden süre> <sebep>'
+  pardon-usage: '§eKullanım: /ah affet <oyuncu>'
+  player-not-found: §eBu oyuncu çevrimiçi değil
+  ban: '§b------------------------------------------------- &n§e%player% açık artırmadan
+    %duration% gün boyunca yasaklandı. &n§rSebep: %reason% &n§b-------------------------------------------------'
+  pardon: §b------------------------------------------------- &n§f%player% adlı oyuncunun
+    açık artırma yasağı kaldırıldı &n§b-------------------------------------------------
+  no-banned-players: §eYasaklı oyuncu yok
+  not-banned: Bu oyuncu açık artırmadan yasaklı değil
+  reload: §eAçık artırma eklentisi yeniden yüklendi.
+  summon-usage: /ah oluştur <varlık>
+  npc-usage: /ah oluştur npc yon <yön>
+  display-usage: /ah oluştur ekran <sıralama türü> <eşya sırası>
+  no-space-for-display: §eBurada zaten bir ekran var. Lütfen önce onu kaldırın.
+  no-air-space-for-display: §eBir ekran oluşturmak için yeterli boşluk yok. Lütfen
+    önce çevredeki blokları kırın.
+  blacklist-usage: '§eKullanım: /ah karaliste ekle <tür> <metin>&n§rtam ve materyal
+    türleri için <metin> girmenize gerek yok, sadece elinizde bir eşya tutmanız yeterli'
+  blacklist-undo: Son kural başarıyla kaldırıldı
+  blacklist-undo-error: Hiç kural yok
+  blacklist-no-item-in-hand: §eBir eşyanın özelliklerini kara listeye eklemek için
+    elinizde o eşyayı tutmanız gerekir
+  blacklist-no-model: §eBir modeli kara listeye eklemek için elinizde özel bir "item_model"
+    içeren eşya tutmanız gerekir
+  blacklist-success: Başarıyla %item%§r eşyasının özellikleri kara listeye eklendi
+  blacklist-name-success: Başarıyla "%name%" kara listeye eklendi
+  blacklist-all: Başarıyla TÜM eşyalar kara listeye eklendi
+  item-blacklisted: §cBu eşyayı açık artırmaya koyamazsınız!
+  item-saved-to-layout-file: Ana elinizdeki eşya layout.yml dosyasına "test" adı altında
+    kaydedildi
+  min-bid: Başlangıç teklifiniz en az %price% olmalı!
+  min-bin: Eşya fiyatı en az %price% olmalı!
+  max-bid: Başlangıç teklifiniz en fazla %price% olabilir!
+  max-bin: Eşya fiyatı en fazla %price% olabilir!
+  help-prefix: §7§l--------------[ §dAçık Artırma Yardım§7§l ]--------------
+  help:
+    about: §6/ah hakkinda:§f Eklenti hakkında bilgi gösterir
+    sell: §6/ah sat:§f Ana elinizdeki eşya ile bir BIN açık artırması oluşturur
+    bid: §6/ah teklif:§f Ana elinizdeki eşya ile bir TEKLİF açık artırması oluşturur
+    announce: §6/ah duyur:§f Oyuncu için açık artırma duyurularını açar/kapatır
+    admin: §6/ah yonetici:§f Açık artırmaları iptal etmek veya silmek için kullanılır
+    ban: §6/ah yasakla:§f Birini yasaklı listesine ekler, açık artırmayı açamaz veya
+      kullanamaz
+    pardon: §6/ah affet:§f Bir oyuncuyu yasaklı listesinden çıkarır
+    blacklist: §6/ah karaliste:§f Açık artırmaya konulamayacak eşyaları kara listeye
+      ekler
+    reload: §6/ah yenile:§f Dosyalarda yapılan değişiklikleri günceller
+    summon: §6/ah oluştur:§f Açık artırma ustası npc'sini veya eşya ekranlarını oluşturur.
+      Op iken yaratıcı modda onlara vurarak kaldırabilirsiniz
+    test: §6/ah deneme:§f Ana elinizdeki eşyayı dosyalara kaydetmek için kullanılır
+    help: §6/ah yardim:§f Yardım menüsünü gösterir
+    search: §6/ah ara:§f Açık artırmada bir eşya arar
+placeholders:
+  number: §6%input%§r
+  price: '%number%%currency-symbol%'
+  price-trim: '%price%'
+  currency-symbol: §6 lira
+  format-numbers: '#,###.##'
+  format-time-characters: gsdn
+  player: '%player_name%'
+  seller: '%player_name%'
+  buyer: '%player_name%'
+chat:
+  already-sold: §cHATA! Bu eşya zaten satıldı!
+  already-sold2: §cBu eşya zaten satıldı!
+  already-sold3: §cBaşka bir oyuncu zaten teklif verdi!
+  non-existent: §cHATA! Bu eşya kaldırıldı!
+  non-existent2: §cBu eşya kaldırıldı!
+  not-enough-money: §cBu eşyayı almak için yeterli paranız yok!
+  expired: §cBu eşya artık açık artırmada değil!
+  inventory-full: §cEnvanteriniz dolu! &nEşyayı almak için bir slot boşaltın!
+  admin-expire-auction: '§b------------------------------------------------- &n§aAçık
+    artırmanın süresini başarıyla bitirdiniz &n§rSebep: %reason% &n§b-------------------------------------------------'
+  admin-delete-auction: '§b------------------------------------------------- &n§aAçık
+    artırmayı başarıyla sildiniz &n§rSebep: %reason% &n§b-------------------------------------------------'
+  expired-auction-by-admin: '§4------------------------------------------------- &n§cAçık
+    artırmanızın süresi bir yönetici tarafından sona erdirildi &n§7Sebep: %reason%
+    &n§4-------------------------------------------------'
+  deleted-auction-by-admin: '§4------------------------------------------------- &n§cAçık
+    artırmanız bir yönetici tarafından silindi &n§7Sebep: %reason% &n§4-------------------------------------------------'
+  own-auction: Bu sizin kendi açık artırmanız! Onu satın alamazsınız.
+  auction-canceled: §b------------------------------------------------- &n§eAçık artırmanız
+    iptal edildi! &n§b-------------------------------------------------
+  collect-sold-auction: §b------------------------------------------------- &n§e%price%
+    değerinde bir açık artırmayı topladınız! &n§b-------------------------------------------------
+  auction-announcement: §6[Açık Artırma] §7%player%§e §r%item%§e x%amount% eşyasını
+    %price% karşılığında satıyor
+  bid-announcement: §6[Açık Artırma] §7%player%§e §r%item%§e x%amount% eşyasını %price%
+    başlangıç fiyatıyla açık artırmaya çıkarıyor
+  invalid-amount: §cBu geçerli bir miktar değil!
+  placed-bid: §e%item%§e için §r%price%§e teklif verildi!
+  outbid:
+    prefix: §6[Açık Artırma] §7%player%§e sizi §r%item%§e için %price%§e ile geçti
+    interaction: §f§l[TIKLA]
+  already-top-bid: §aBu açık artırmada zaten en yüksek teklif sizde!
+  collect-coins: §b------------------------------------------------- &n§eBir açık
+    artırmadan %price%§e geri aldınız &n§b-------------------------------------------------
+  input-listener: '§e%request%. Lütfen isteğinizi sohbete yazın:'
+  purchase-auction: §b------------------------------------------------- &n§e§7%seller%§e
+    adlı oyuncunun açık artırmasından §r%item%§e satın aldınız &n§b-------------------------------------------------
+  claim-auction: §b------------------------------------------------- &n§e§r%item%§e
+    eşyasını §7%seller%§e adlı oyuncunun açık artırmasından talep ettiniz &n§b-------------------------------------------------
+  sold-message:
+    interaction: ' §f§l[TIKLA]'
+    prefix: §6[Açık Artırma] §7%buyer%§e §r%item%§e eşyasını %price% karşılığında
+      satın aldı
+    auto-collect: §6[Açık Artırma] §7%buyer%§e §r%item%§e eşyasını satın aldı! §6+%price%
+items:
+  next-page:
+    name: §aSonraki Sayfa
+    lore: §7%page%/%pages% &n &n§eAtlamak için sağ tıkla! &n§aSayfayı çevirmek için
+      tıkla!
+  previous-page:
+    name: §aÖnceki Sayfa
+    lore: §7%page%/%pages% &n &n§eAtlamak için sağ tıkla! &n§aSayfayı çevirmek için
+      tıkla!
+  search:
+    name: §aArama
+    lore: '§7İsme, türe veya büyüye göre eşya bul &n &n§7Filtre: %filter% &n &n§eTemizlemek
+      için sağ tıkla! &n§aFiltre belirlemek için tıkla!'
+  locked-slot:
+    name: §cKilitli Slot
+  refresh:
+    name: §aYenile
+    lore: §7Menüyü yenilemek için tıkla
+  back-main-menu:
+    name: §aAna Menü
+    lore: §7Geri dönmek için tıkla!
+  back-my-auctions:
+    name: §aAçık Artırmalarım
+    lore: §7Geri dönmek için tıkla!
+  info:
+    name: §aBilgi
+    lore: §7Yeni bir açık artırma oluşturmak için satmak istediğiniz eşyayı elinize
+      alıp &n§7/ah sat 1000 &n§7komutunu kullanın. &n§7Girdiğiniz sayı eşyanın fiyatı
+      olacaktır. &n§7Güncel vergi %tax%§7'dir. &n§8 - açık artırma evi ElaineQheart
+      tarafından yapılmıştır
+  my-auctions:
+    name: §aAçık Artırmalarım
+    lore: §7Açık artırmalarınızı görmek için tıkla!
+  sort-highest-price:
+    name: §aSırala
+    lore: ' &n§b► En Yüksek Fiyat &n§7 En Düşük Fiyat &n§7 Süresi Yakında Dolacaklar
+      &n§7 Alfabetik &n &n§eGeriye gitmek için sağ tıkla! &n§aSıralamayı değiştirmek
+      için tıkla!'
+  sort-lowest-price:
+    name: §aSırala
+    lore: ' &n§7 En Yüksek Fiyat &n§b► En Düşük Fiyat &n§7 Süresi Yakında Dolacaklar
+      &n§7 Alfabetik &n &n§eGeriye gitmek için sağ tıkla! &n§aSıralamayı değiştirmek
+      için tıkla!'
+  sort-ending-soon:
+    name: §aSırala
+    lore: ' &n§7 En Yüksek Fiyat &n§7 En Düşük Fiyat &n§b► Süresi Yakında Dolacaklar
+      &n§7 Alfabetik &n &n§eGeriye gitmek için sağ tıkla! &n§aSıralamayı değiştirmek
+      için tıkla!'
+  sort-alphabetical:
+    name: §aSırala
+    lore: ' &n§7 En Yüksek Fiyat &n§7 En Düşük Fiyat &n§7 Süresi Yakında Dolacaklar
+      &n§b► Alfabetik &n &n§eGeriye gitmek için sağ tıkla! &n§aSıralamayı değiştirmek
+      için tıkla!'
+  bin-filter-all:
+    name: §aBIN Filtresi
+    lore: ' &n§b► Hepsini Göster &n§7 Sadece BIN &n§7 Sadece Açık Artırmalar &n &n§eGeriye
+      gitmek için sağ tıkla! &n§aFiltreyi değiştirmek için tıkla!'
+  bin-filter-bin:
+    name: §aBIN Filtresi
+    lore: ' &n§7 Hepsini Göster &n§b► Sadece BIN &n§7 Sadece Açık Artırmalar &n &n§eGeriye
+      gitmek için sağ tıkla! &n§aFiltreyi değiştirmek için tıkla!'
+  bin-filter-auctions:
+    name: §aBIN Filtresi
+    lore: ' &n§7 Hepsini Göster &n§7 Sadece BIN &n§b► Sadece Açık Artırmalar &n &n§eGeriye
+      gitmek için sağ tıkla! &n§aFiltreyi değiştirmek için tıkla!'
+  my-sort-all:
+    name: §aSırala
+    lore: ' &n§b► Tüm Açık Artırmalar &n§7 Satılan Eşyalar &n§7 Süresi Dolan Eşyalar
+      &n§7 Aktif Açık Artırmalar &n &n§eGeriye gitmek için sağ tıkla! &n§aSıralamayı
+      değiştirmek için tıkla!'
+  my-sort-sold:
+    name: §aSırala
+    lore: ' &n§7 Tüm Açık Artırmalar &n§b► Satılan Eşyalar &n§7 Süresi Dolan Eşyalar
+      &n§7 Aktif Açık Artırmalar &n &n§eGeriye gitmek için sağ tıkla! &n§aSıralamayı
+      değiştirmek için tıkla!'
+  my-sort-expired:
+    name: §aSırala
+    lore: ' &n§7 Tüm Açık Artırmalar &n§7 Satılan Eşyalar &n§b► Süresi Dolan Eşyalar
+      &n§7 Aktif Açık Artırmalar &n &n§eGeriye gitmek için sağ tıkla! &n§aSıralamayı
+      değiştirmek için tıkla!'
+  my-sort-active:
+    name: §aSırala
+    lore: ' &n§7 Tüm Açık Artırmalar &n§7 Satılan Eşyalar &n§7 Süresi Dolan Eşyalar
+      &n§b► Aktif Açık Artırmalar &n &n§eGeriye gitmek için sağ tıkla! &n§aSıralamayı
+      değiştirmek için tıkla!'
+  cancel:
+    name: §cİptal
+  collect-expired:
+    name: §cSüresi Dolan Eşyayı Al
+    lore: ' &n§eAlmak için tıkla!'
+  cancel-auction:
+    name: §cAçık Artırma Eşyasını İptal Et
+    lore: ' &n§eAlmak için tıkla!'
+  cancel-bid-auction:
+    name: §cAçık Artırmayı İptal Et
+    lore: ' &n§7Açık artırmaları sadece§c 0§7 teklif aldıkları sürece &n§7iptal edebilirsiniz!
+      &n &n§eAçık artırmayı iptal etmek için tıkla!'
+  admin-info:
+    name: §aBilgi
+    lore: §7Süresini bitirmek veya silmek için bir eşyaya tıklayın &n§7Süresi biten
+      eşyalar oyuncu tarafından tekrar toplanabilir &n§7Silinen eşyalar açık artırmadan
+      kaldırılır &n§7ve envanterinize eklenir
+  admin-cancel-auction:
+    name: §cAçık Artırma Eşyasını İptal Et
+    lore: ' &n§eOyuncu eşyayı geri alamaz! Onu siz toplayacaksınız!'
+  admin-expire-auction:
+    name: §eAçık Artırma Eşyasının Süresini Bitir
+    lore: ' &n§eSüresini bitirmek için tıkla!'
+  confirm:
+    name: §aOnayla
+  deleted:
+    name: §cİptal Edilen Eşya
+  buy-item:
+    name: §6Eşyayı Hemen Satın Al!
+    lore: ' &n§7Fiyat: %price% &n &n§eSatın almak için tıkla!'
+  not-enough-money:
+    name: §6Eşyayı Hemen Satın Al!
+    lore: ' &n§7Bu eşyayı almak için %price%§7 gerekiyor! &n &n§cYeterli paranız yok!'
+  confirm-buy:
+    name: §aOnayla
+    lore: '§7Tutar: %price%'
+  collect-sold:
+    name: §aSatılan Eşyayı Al
+    lore: ' &n§7Vergiler dahil değer: %price% &n &n§eAlmak için tıkla!'
+  choose-item-buy-amount:
+    name: §fSatın alınacak miktarı seç!
+    lore: §7Sadece birkaç eşya satın almayı seçebilirsiniz &n§7bu durumda fiyat orantılı
+      olarak düşer &n &n§eBelirlemek için tıkla!
+  loading:
+    name: yükleniyor...
+  bid-history:
+    name: §fTeklif Geçmişi
+    lore: '§7Toplam teklif: §a%amountOfBids% teklif'
+    bid: '§8------------------ &n§7Teklif: %price% &n§7Veren: %player% &n§b%time%
+      önce'
+    more: §8------------------ &n§7...%amount% daha fazla
+  bid-explanation:
+    name: '§fTeklif Miktarı: %price%'
+    lore: §7Bu açık artırmada en yüksek teklifi tutmak için &n§7en az %price%§7 teklif
+      vermeniz gerekir. &n &n§7Açık artırma bittiğinde§e en yüksek teklif &n§7eşyayı
+      kazanır. &n &n§7Kazanamazsanız, teklif &n§7paranızı geri talep edebilirsiniz.
+      &n &n§eMiktarı düzenlemek için tıkla!
+  submit-bid:
+    name: §6Teklifi Gönder
+    lore: ' &n§7Yeni teklif: %price% &n &n§eTeklif vermek için tıkla!'
+  submit-another-bid:
+    name: §6Teklifi Gönder
+    lore: ' &n§7Yeni teklif: %price% &n§7Önceki teklifiniz: %price2% &n &n§7Ödeyeceğiniz
+      tutar: %price3% &n &n§eTeklif vermek için tıkla!'
+  cannot-afford-bid:
+    name: §6Teklifi Gönder
+    lore: ' &n§7Yeni Teklif: %price% &n &n§cTeklifi karşılayamazsınız!'
+  top-bid:
+    name: §6En Yüksek Teklif
+    lore: ' &n§7Teklifiniz: %price% &n§7Yeni teklif: %price2% &n &n§aZaten en yüksek
+      teklif sizde!'
+  my-bids:
+    name: §aTeklifleri Yönet
+    lore: §7Tekliflerinizi görüntüleyin ve yönetin &n &n§eGörüntülemek için tıkla!
+  collect-auction:
+    name: §6Açık Artırmayı Topla
+    lore: ' &n§7En yüksek teklifi %price% ile siz verdiniz &n§7Eşyayı toplayabilirsiniz.
+      &n &n§eEşyayı toplamak için tıkla!'
+  collect-coins:
+    name: §6Parayı Topla
+    lore: ' &n§7Bu açık artırmada en yüksek teklifi siz vermediniz. &n§7Teklif paranızı
+      geri alabilirsiniz. &n &n§7En yüksek teklif: %price%§7, veren: %player% &n§7Sizin
+      teklifiniz: %price2% &n &n§eParayı toplamak için tıkla!'
+  own-bid:
+    name: §6Teklifi Gönder
+    lore: ' &n§7Yeni teklif: %price% &n &n§aBu sizin kendi açık artırmanız!'
+  auction:
+    lore:
+      own-auction: '§aBu sizin kendi eşyanız! &n '
+      admin-deleted: §cBir yönetici tarafından silindi!
+      admin-expired: §cBir yönetici tarafından süresi bitirildi!
+      admin-message: '§7Sebep: %reason%'
+      expired: §cSüresi Doldu!
+      ended: §7Durum:§a Sona Erdi!
+      sold: '§6Satıldı! &n§7Alıcı: %buyer%'
+      partially-sold: '§6Satıldı: §e%sold%/%total% &n§7Alıcı: %buyer%&n '
+      waiting-list: 'Açık artırma başlıyor: %time%'
+      active: 'Bitmesine kalan süre: %time%'
+      buying-item: §8------------------ &n§e§nEŞYA SATIN ALINIYOR!
+      shulker-preview: §f§oÖnizlemek için sağ tıkla!
+      default: '§8------------------ &n§7Satıcı: %seller% &n§7Hemen al: %price% &n '
+      default-starting-bid: '§8------------------ &n§7Satıcı: %seller% &n§7Başlangıç
+        Teklifi: %price% &n '
+      default-bid: '§8------------------ &n§7Satıcı: %seller% &n§7Teklif: §a%amountOfBids%
+        teklif &n &n§7En yüksek teklif: %price% &n§7Teklif veren: %buyer% &n '
+  admin-expire-item:
+    lore: '§8------------------ &n§7Satıcı: %seller% &n§7Fiyat: %price% &n &n§cBir
+      yönetici tarafından süresi bitirildi! &n§7Sebep: %reason%'
+  admin-delete-item:
+    lore: '§8------------------ &n§7Satıcı: %seller% &n§7Fiyat: %price% &n &n§cBir
+      yönetici tarafından silindi! &n§7Sebep: %reason%'

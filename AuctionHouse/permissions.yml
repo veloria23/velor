@@ -1,0 +1,10 @@
+auction-slots:
+  vipsystem:
+    auctionhouse:
+      default: 5
+      vip-1: 10
+      vip-2: 15
+      vip-3: 25
+      vip-4: 40
+bin-auction-duration: {}
+bid-auction-duration: {}

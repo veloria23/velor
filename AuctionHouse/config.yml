@@ -1,0 +1,21 @@
+tax: 0.01 # %1 vergi
+auction-setup-time: 30 # bir eşyayı açık artırmaya koymanın aldığı süre
+default-max-auctions: 10
+sold-message: true # açık artırmalarından biri satıldığında oyuncuya mesaj gönderir
+auto-collect: false # bir açık artırma satın alındığında parayı otomatik olarak oyuncuya verir ve açık artırmayı listeden kaldırır
+partial-selling: false # oyuncuların bir açık artırmadan istedikleri miktarı seçerek satın almasına izin verir
+admin-permission: auctionhouse.moderator
+display-update: 20 # 20 tick = 1 saniye, eşya ekranlarının ne sıklıkla güncelleneceği; anlık güncelleme için 1 yapılabilir
+auction-announcements: true # biri bir eşyayı açık artırmaya koyduğunda duyuru yapar (oyuncular bunu /ah duyur ile açıp kapatabilir)
+bin-auctions: true # BIN = Hemen Satın Al [/ah sat <miktar>]
+bin-auction-duration: 172800 # bir açık artırmanın saniye cinsinden süresi (60*60*48 = 172800)
+min-bin: 1 # minimum satış fiyatı
+max-bin: -1 # satış fiyatını sınırlar; devre dışı bırakmak için -1 yapın
+bid-auctions: true # /ah teklif <miktar> yazarak gerçek açık artırmaları etkinleştirir
+bid-auction-duration: 7200 # teklifli bir açık artırmanın saniye cinsinden süresi (60*60*2 = 7200)
+min-bid: 1 # minimum teklif fiyatı
+max-bid: -1 # teklif fiyatını sınırlar; devre dışı bırakmak için -1 yapın
+last-bid-extra-time: 60 # bir teklif verildiğinde açık artırma süresi bu değerden azsa, süre bu değere ayarlanır
+bid-increase-percent: 25 # her teklifin en az ne kadar artması gerektiği
+use-adventure-text-minimessages: true # messages.yml içinde <yellow> gibi miniMessage desteği
+plugin-version: 1.5.5
